@@ -1,0 +1,55 @@
+/* Social Links Styles */
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    position: relative;
+    flex-wrap: wrap; /* Allow items to wrap in smaller screens */
+}
+
+.social-links::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px; /* Background shape width */
+    height: 100px; /* Background shape height */
+    border-radius: 50%; /* Circular shape */
+    z-index: 0;
+}
+
+.social-link {
+    color: white;
+    margin: 0 15px;
+    font-size: 30px; /* Base icon size */
+    transition: transform 0.3s, color 0.3s;
+    position: relative;
+    z-index: 1;
+}
+
+.social-link:hover {
+    transform: scale(1.2);
+    color: #ecf0f1;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .social-link {
+        font-size: 24px; /* Smaller icon size on mobile */
+        margin: 0 10px; /* Reduce margin on mobile */
+    }
+}
+
+@media (max-width: 576px) {
+    .social-link {
+        font-size: 20px; /* Even smaller icon size on very small screens */
+    }
+
+    .social-links::before {
+        width: 80px; /* Adjust background shape size for small screens */
+        height: 80px; 
+    }
+}

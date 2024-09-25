@@ -1,0 +1,89 @@
+.navbar {
+    width: 20%;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.navbar_part1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.avatar {
+    width: 80%; /* Set the image width to 80% of its container */
+    max-width: 250px; /* Limit the maximum size */
+    margin-bottom: 10px;
+    border: 1px solid white; /* Optional: Adds a border around the image */
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.Navbar_links {
+    color: white;
+    list-style-type: none;
+    text-decoration: none;
+    padding: 10px;
+    width: 100%;
+    text-align: end;
+}
+
+.Navbar_links:hover {
+    background-color: #575757;  
+    border-radius: 5px;
+}
+
+.main-content {
+    margin-left: 22%; /* Push content to the right, slightly more than navbar width */
+    padding: 20px;    /* Add some padding for better readability */
+}
+
+.content_section{
+    border: 2px solid black;
+    padding: 5px;
+    margin: 10px;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar {
+        width: 30%;
+    }
+
+    .avatar {
+        width: 60%; /* Decrease the size slightly on smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        width: 50%;
+    }
+
+    .avatar {
+        width: 50%; /* Further decrease for smaller screens */
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .navbar {
+        width: 70%;
+    }
+
+    .avatar {
+        width: 40%; /* Minimum size for very small screens */
+    }
+
+    .Navbar_links {
+        font-size: 16px;
+    }
+}
