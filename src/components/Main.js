@@ -33,7 +33,7 @@ function Main() {
 
         {/* Side navabar */}
         <nav className='nav-links'>
-            <a className='Navbar_links' href='/About'> 
+            <a className='Navbar_links' href='/'> 
                 About
             </a>
 
